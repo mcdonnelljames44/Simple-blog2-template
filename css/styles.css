@@ -1,0 +1,255 @@
+body{
+    background-color: #fff;
+}
+
+h1{
+    display: none;
+}
+
+.mdl-layout .mdl-layout-title{
+    font-family: 'Passion One', cursive;
+    font-size: 44px;
+}
+
+.mdl-layout .mdl-layout__drawer{
+    background: rgb(121,85,72);
+    color: #fff;
+}
+
+.mdl-layout .mdl-layout__drawer .mdl-navigation a{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+.mdl-layout .mdl-layout__drawer .mdl-navigation h2{
+    display: none;
+}
+
+.mdl-layout .mdl-layout__drawer .mdl-navigation a .material-icons{
+    font-size: 44px;
+    padding-right: 8px;
+}
+
+.mdl-layout__content .home h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 64px;
+    padding: 30px 0;
+}
+
+.mdl-layout__content .home .mdl-card_supporting-text{
+    padding: 0;
+}
+
+.mdl-layout__content .home .mdl-card__action a{
+    float: right;
+}
+
+.mdl-layout__content .home h4{
+    font-family: 'Passion One', cursive;
+}
+
+.mdl-layout__content .home h4,
+.mdl-layout__content .home p,
+.mdl-layout__content .home .article-info{
+    padding-left: 10px;
+}
+
+.mdl-layout__content .home .article .material-icons{
+    font-size: 28px;
+    padding-right: 4px;
+}
+
+.recent-articles .recent-article header{
+    text-align: center;
+}
+
+.recent-articles .recent-article header .material-icons{
+    font-size: 132px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.mdl-layout__content .home p{
+    font-family: 'Roboto', sans-serif;
+}
+
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link:hover{
+    background-color: #fff;
+    color: #795548;
+}
+
+.mdl-layout__content .home .recent-article{
+    margin-top: 20px;
+}
+
+.mdl-layout__content .home .motto p{
+    font-size: 32px;
+    line-height: 46px;
+    font-family: 'Courgette', cursive;
+}
+
+.about .mdl-grid:first-child, 
+.contact .mdl-grid:first-child,
+.archives .mdl-grid:first-child{
+    background-color: #795548;
+}
+
+.about header, .contact header{
+    height: 250px;
+    background-repeat: none;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    text-align: center;
+    color: white;
+} 
+
+.about h2, .contact h2{
+    font-family: 'Passion One', cursive;
+    font-size: 84px;
+    padding: 40px 0;
+}
+
+.about .about-text .mdl-cell{
+    max-width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.about .about-text, .contact .about-text{
+    margin-top: 30px;
+}
+
+.about .about-text p, .contact .about-text p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    line-height: 28px;
+}
+
+.contact .contact-form{
+    margin-top: 30px;
+}
+
+.article header{
+    height: 278px;
+    background-repeat: none;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.article h2{
+    font-family: 'Passion One', cursive;
+    font-size: 64px;
+    padding: 40px 0;
+    color: #ef5350;
+}
+
+.article .article-info .material-icons{
+    font-size: 64px;
+    padding: 0 10px 0 20px;
+    color: #795548;
+}
+
+
+.article .article-info span{
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
+    color: #795548;
+}
+
+.article .article-text{
+    margin-top: 40px;
+}
+
+.article .article-text{
+    max-width: 980px;
+    padding: 40px;
+}
+
+.article .article-text p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.archives header{
+    height: 250px;
+    background-repeat: none;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+.archives h2{
+    font-family: 'Passion One', cursive;
+    font-size: 84px;
+    padding: 40px 0;
+}
+
+.archives .mdl-list__item-avatar{
+    color: rgb(121, 85, 72);
+    background-color: #fff;
+}
+
+.archives .archive-content{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.contact .contact-form .mdl-textfield{
+    width: 100%;
+}
+
+@media(max-width: 839px){
+    .mdl-layout .mdl-layout-title{
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 1096px){
+  .recent-articles .recent-article header .material-icons{
+      font-size: 80px;
+  }
+    .article h2{
+        font-size: 44px;
+        padding-bottom: 5px;
+    }
+
+    .article .article-info .material-icons{
+        font-size: 32px;
+    }
+
+    .article .article-info span{
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 664px){
+    .mdl-layout__content .home h2{
+        font-size: 54px;
+    }
+}
+
+@media(max-width: 459px){
+    .article .article-info .material-icons{
+        display: block;
+    }
+}

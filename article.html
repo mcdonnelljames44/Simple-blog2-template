@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Material Design Lite blog</title>
+<meta charset="UTF-8">
+<!--Main CSS-->
+<link rel="stylesheet" href="css/styles.css" type="text/css"  />
+<!--Material-icons CSS-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<!--Material-theme CSS-->
+ <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.brown-red.min.css" />
+ <!--Google-fonts CSS--> 
+ <link href='https://fonts.googleapis.com/css?family=Roboto|Passion+One' rel='stylesheet' type='text/css'>
+ <link href='https://fonts.googleapis.com/css?family=Courgette|Cookie' rel='stylesheet' type='text/css'></head>
+<body>
+
+<h1>Material Design Lite blog</h1>
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Material Design Blog</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                  mdl-textfield--floating-label mdl-textfield--align-right">
+        <label class="mdl-button mdl-js-button mdl-button--icon"
+               for="fixed-header-drawer-exp">
+          <i class="material-icons">search</i>
+        </label>
+        <div class="mdl-textfield__expandable-holder">
+          <input class="mdl-textfield__input" type="text" name="sample"
+                 id="fixed-header-drawer-exp" placeholder="search for archives...">
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Menu</span>
+    <nav class="mdl-navigation">
+      <h2>Main menu</h2>
+      <a class="mdl-navigation__link" href="index.html"><i class="material-icons">home</i>Home</a>
+      <a class="mdl-navigation__link" href="about.html"><i class="material-icons">person</i>About</a>
+      <a class="mdl-navigation__link" href="archives.html"><i class="material-icons">import_contacts</i>Archives</a>
+      <a class="mdl-navigation__link" href="contact.html"><i class="material-icons">mail_outline</i>Contact</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="article page-content">
+        <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--12-col">
+                <header>
+                    <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+                      <div class="article-info">
+                          <i class="material-icons">insert_invitation</i>
+                          <span>2016-06-12</span>
+                          <i class="material-icons">person</i>
+                          <span>Lorem ipsum</span>
+                      </div>
+                </header>
+            </div>
+        </div>
+        <div class="article-text mdl-grid">
+            <div class="mdl-cell mdl-cell--12-col">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam autem iure illo quasi cupiditate illum quaerat nulla provident voluptatum iste, magnam, nobis, debitis aspernatur assumenda neque reprehenderit velit commodi molestias.
+                    Nobis quis provident corporis quisquam, pariatur nisi eum distinctio, nemo voluptatum, eius obcaecati eaque, temporibus necessitatibus tempora maxime quos molestias alias dolores est quam asperiores nesciunt sequi. Reiciendis, magni, aperiam!
+                    Officiis repellendus harum suscipit eveniet at dicta repellat iusto, sit fugit ea velit veritatis, totam, voluptatibus eius nemo, voluptatum necessitatibus? Illum voluptates suscipit pariatur dolorem sed omnis exercitationem odit, enim.
+                    Eaque rerum architecto, alias eligendi fugit voluptatibus mollitia. Autem modi enim cupiditate nostrum rerum, nesciunt possimus odit. Quas quo consectetur quasi est, pariatur ut maiores optio minus, animi necessitatibus nobis?
+                </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam autem iure illo quasi cupiditate illum quaerat nulla provident voluptatum iste, magnam, nobis, debitis aspernatur assumenda neque reprehenderit velit commodi molestias.
+                    Nobis quis provident corporis quisquam, pariatur nisi eum distinctio, nemo voluptatum, eius obcaecati eaque, temporibus necessitatibus tempora maxime quos molestias alias dolores est quam asperiores nesciunt sequi. Reiciendis, magni, aperiam!
+                </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam autem iure illo quasi cupiditate illum quaerat nulla provident voluptatum iste, magnam, nobis, debitis aspernatur assumenda neque reprehenderit velit commodi molestias.
+                </p>
+            </div>
+        </div>
+    </div>
+  </main>
+</div>
+
+<!--jQuery-->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<!--MDL JS-->
+<script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+
+</body>
+</html>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var sidebarAndWrapper = $('#sidebar,.content-wrapper');
+
+        $('.sidebar-toggle').on('click', function () {
+            $(sidebarAndWrapper).toggleClass('hide-sidebar');
+        });
+    });
+</script>
